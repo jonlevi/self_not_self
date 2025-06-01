@@ -3,6 +3,9 @@ This repo is the minimal code for reproducing the figure set and analyses for ou
 
 There is a lot more code and work that went into this project, including the code for actually inferring the models and a lot of analyses that did not make it into the paper. For those, we encourage you to visit our main repo at: https://github.com/andim/peptidome 
 
+# Max Ent Tutorial
+We include a basic [example tutorial](https://github.com/jonlevi/self_not_self/blob/main/max_ent/max_ent_tutorial.md) for how to train a maximum entropy model of a peptidome. This will take you all the way from a reference proteome to fitting model parameters and calculating entropies. 
+
 # Running the code in this repo
 Each figure in our paper can be reproduced by running the appropriate jupyter notebook in the `notebooks` folder. All dependencies used are publically available and can be pip installed per usual, although if you prefer we have an environment yml file provided that can be used to set up a conda environment.
 
