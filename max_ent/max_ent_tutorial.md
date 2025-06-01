@@ -10,7 +10,7 @@ The steps are as follows:
 For an example, we will calculate a max ent model for 9-mer peptides in the Listeria proteome
 
 ## Generate Peptides
-By running `python generate_reference_matrices.py`, we take in the Listeria proteome in `data/`, create all possible 9-mer peptides, and split the data into a training set and test set. These will be output in compressed CSV files.
+By running `python generate_reference_matrices.py`, we take in the Listeria proteome fasta file, create all possible 9-mer peptides, and split the data into a training set and test set. These will be output in compressed .csv.gz files.
 
 ## Fit the model through MCMC and gradient descent
 We run `python fit_model.py` which takes the training peptide set saved from the previous step, and fits the Langrange multipliers using gradient descent and MCMC sampling. The energies are computed for a specific parameterization using the functions in `compute_energies.py`. The final parameter set is output as a .npz file.
