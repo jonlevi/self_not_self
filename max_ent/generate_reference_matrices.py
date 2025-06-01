@@ -8,14 +8,14 @@ from lib import *
 from lib.maxent import *
 
 k = 9
-proteome = 'Listeria'
+proteome_path = 'UP000000817Listeria.fasta'
 
 filterlength = 12
 seed = 12345
 
 prng = np.random.RandomState(seed=seed)
 
-df = load_proteome_as_df(proteome)
+df = load_proteome_as_df_path(proteome_path)
 df.drop_duplicates(subset=['Sequence'], inplace=True)
 seqs = df['Sequence']
 
